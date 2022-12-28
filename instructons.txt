@@ -1,0 +1,23 @@
+mkdir = make directory (Linux/Unix)
+
+md =    make directory (windows)
+MyClassA
+MyClassB
+MyClassC
+MyClassD
+
+
+MyClassA
+		MyClassB
+			MyClassC
+					MyClassD
+
+class Child extends Parent {
+}
+
+MyClassA
+		MyClassB
+			MyClassC
+					MyClassD
+						......
+								MyClassZ
