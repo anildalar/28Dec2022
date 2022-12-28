@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Classs Inheritance</title>
+
+        <script>
+            //I can write the js code before the closing of head tag
+        </script>
+    </head>
+    <body>
+      
+        
+        <script>
+            //I can write the js code before the closing of body tag
+
+            
+            class MyClassA{ //PascalCase
+                //Lets figure out how many member are there in a class
+                //1. Member 1
+
+
+                //2. Member 2
+
+                //3. Member 3 i.e methods
+                //1. Methods Defination
+                addition(x,y){ //camleCase // Formal Arguments
+                    //function body
+                    //Every method should return something
+                    return x+y; // statement
+
+                }
+            }
+
+            // In order to call a method inside a class with// 
+
+            // You have to create class object
+            // let object = new ClassName();
+            // object.method();
+            let myobjecta = new MyClassA();
+            let resulta =myobjecta.addition(1,2); // 1 and 2 are actual arguments
+            console.log(resulta); //
+
+            class MyClassB extends MyClassA{
+                //1. Member 1
+
+                //2. Member 2
+            
+                //3. Member 3
+                subtraction(x,y){// Formal Arguments
+                    return x-y;
+                }
+
+            }
+
+            let myobjectb = new MyClassB();
+            let resultb = myobjectb.subtraction(10,2);
+            console.log(resultb);
+
+            /*
+            class Child extends Parent {
+            }
+            */
+            class MyClassC extends MyClassB{
+                //1. 
+
+
+                //2.
+
+
+                //3. Method defination
+                multiplication(x,y){// Formal Arguments
+                    return x*y;
+                }
+            }
+
+            let myobjectc = new MyClassC();
+            let resultc = myobjectc.multiplication(5,5);
+            console.log(resultc);
+
+            /*
+            class ChildClassName extends ParentClassName {
+            }
+            */
+
+            class MyClassD extends MyClassC{ // PascalCase
+                //1.
+
+                //2.
+
+                //3. Method/Function Defination
+                division(x,y){// Formal Arguments
+                    return x/y;
+                }
+            }
+
+            let myobjectd = new MyClassD();
+            let resultd = myobjectd.division(25,5)
+            console.log(resultd);
+
+            console.log(myobjectd.addition(10,5));
+            console.log(myobjectd.subtraction(25,5));
+            console.log(myobjectd.multiplication(25,5));
+            console.log(myobjectd.division(15,5));
+
+
+        </script>
+    </body>
+</html>
